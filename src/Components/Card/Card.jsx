@@ -3,8 +3,9 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
   import 'react-toastify/dist/ReactToastify.css';
-const Card = ({ donation }) => {
-  const { category, coverImg, title, textColor, bgColor, btnColor } = donation;
+  import { saveDonationApplication } from '../../utility/localstorage';
+  const Card = ({ donation }) => {
+    const { id, category, coverImg, title, textColor, bgColor, btnColor } = donation;
 
   // Define styles for dynamic colors
   const cardStyle = {
@@ -28,6 +29,7 @@ const Card = ({ donation }) => {
         theme: "dark"
       });
     } else {
+      saveDonationApplication(id);
       toast.success(`Congratulations! Your donation item is added for:\n "${title}" `,{
         theme: "colored"
       });

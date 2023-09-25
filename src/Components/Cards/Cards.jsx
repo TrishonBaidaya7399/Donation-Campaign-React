@@ -42,7 +42,7 @@ const Cards = () => {
             {
                 donations.map((donation, idx)=> <Card key={idx} donation={donation}></Card>)
             }
-        </div>
+          </div>
 
         }
          
