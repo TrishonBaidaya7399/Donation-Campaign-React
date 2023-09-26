@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col mb-[30px] md:mb-[50px]">
-      <div className="hero min-h-[600px] mt-[-130px] mb-[100px]" style={{ backgroundImage: `url(${backgroundImg})` }}>
+      <div className="hero min-h-[600px] mt-[-130px] mb-[30px] md:mb-[100px]" style={{ backgroundImage: `url(${backgroundImg})` }}>
         <div className="hero-overlay bg-white bg-opacity-80"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="">
@@ -21,7 +21,7 @@ const Home = () => {
             <div className="flex items-center justify-center">
               <input
                 id="searchInput" // Add an id to the input field
-                className="rounded-l-lg py-[15px] pl-[16px] w-[50%] border-2 border-gray-300 text-gray-700"
+                className="rounded-l-lg py-[15px] pl-[16px] w-[50%] border-2 border-gray-400 text-gray-700"
                 type="text"
                 placeholder="Search here...."
               />

@@ -46,7 +46,7 @@ const Statistic = () => {
   };
   console.log(yourDonationPercentage);
   return (
-    <div className="flex flex-col items-center py-[50px]">
+    <div className="flex flex-col items-center justify-center py-[50px]">
       {
         yourDonationPercentage === 0 ?(
           <div className="flex flex-col items-center justify-center">
@@ -58,8 +58,8 @@ const Statistic = () => {
         )
         :
         (
-          <div>
-            <div style={{ display: "flex", alignItems: "center", height: "60vh" , color:"white", fontWeight:"700", fontSize:"30px"}}>
+    <div>
+      <div style={{ display: "flex", alignItems: "center", height: "60vh" , color:"white", fontWeight:"700", fontSize:"24px"}}>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
@@ -68,7 +68,7 @@ const Statistic = () => {
             cy="40%"
             labelLine={false}
             label={renderCustomizedLabel}
-            outerRadius={150}
+            outerRadius={110}
             fill="#8884d8"
             dataKey="value"
           >
@@ -79,9 +79,9 @@ const Statistic = () => {
         </PieChart>
       </ResponsiveContainer>
     </div>
-    <div className="flex gap-[56px] mt-[-50px]">
-      <div className="flex gap-4 items-center">Your Donation: {yourDonations} <div className="w-[80px] h-[10px] bg-[#00C49F] "></div></div>
-      <div className="flex gap-4 items-center">Total Donation: {totalDonations} <div className="w-[80px] h-[10px] bg-[#FF444A] "></div></div>
+    <div className="flex flex-col md:flex-row gap-4 lg:gap-[56px] mt-[0px] lg:mt-[-50px] px-[auto]">
+      <div className="flex gap-4 items-center justify-center text-[20px] font-semibold">Your Donation: {yourDonations} <div className="w-[80px] h-[10px] bg-[#00C49F] "></div></div>
+      <div className="flex gap-4 items-center justify-center text-[20px] font-semibold">Total Donation: {totalDonations} <div className="w-[80px] h-[10px] bg-[#FF444A] "></div></div>
     </div>
           </div>
           

@@ -23,7 +23,7 @@ const Cards = ({ cardsSearchInput  }) => {
   return (
     <div>
       {loading ? (
-        <div className="flex flex-col justify-center items-center my-[50px]">
+        <div className="flex flex-col justify-center items-center my-[10px] md:my-[50px]">
           <div>
             <RotatingLines
               strokeColor="blue"
