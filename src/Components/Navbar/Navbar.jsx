@@ -19,8 +19,8 @@ const Navbar = () => {
       setActiveNavLink("Home");
     } else if (pathname === "/donation") {
       setActiveNavLink("Donation");
-    } else if (pathname === "/statistics") {
-      setActiveNavLink("Statistics");
+    } else if (pathname === "/statistic") {
+      setActiveNavLink("Statistic");
     } else {
       setActiveNavLink("/"); // Set to an empty string for other cases
     }
@@ -56,7 +56,7 @@ const Navbar = () => {
             <NavLink to="/statistic">
             <li
               className={`cursor-pointer ${
-                activeNavLink === "Statistics" ? "text-[#FF444A] font-semibold border-b-2 border-[#FF444A]" : "hover:text-[#FF444A] border-b-2 border-[transparent] font-semibold hover:border-b-2 hover:border-[#FF444A] duration-200"
+                activeNavLink === "Statistic" ? "text-[#FF444A] font-semibold border-b-2 border-[#FF444A]" : "hover:text-[#FF444A] border-b-2 border-[transparent] font-semibold hover:border-b-2 hover:border-[#FF444A] duration-200"
               }`}
             >
               Statistics
@@ -93,7 +93,7 @@ const Navbar = () => {
             <NavLink to="/statistic">
             <li
               className={`cursor-pointer ${
-                activeNavLink === "Statistics" ? "text-[#FF444A] font-semibold border-b-2 border-[#FF444A]" : "hover:text-[#FF444A] border-b-2 border-[transparent] font-semibold hover:border-b-2 hover:border-[#FF444A] duration-200"
+                activeNavLink === "Statistic" ? "text-[#FF444A] font-semibold border-b-2 border-[#FF444A]" : "hover:text-[#FF444A] border-b-2 border-[transparent] font-semibold hover:border-b-2 hover:border-[#FF444A] duration-200"
               }`}
             >
               Statistics

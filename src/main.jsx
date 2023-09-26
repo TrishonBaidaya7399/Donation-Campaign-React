@@ -28,13 +28,14 @@ const router = createBrowserRouter([
         
       },
       {
-        path: "/statistic",
-        element: <Statistic/>,
-      },
-      {
         path: "/donation/:id",
         element: <DonationDetails/>,
         loader: ()=> fetch('/data.json'),
+      },
+      {
+        path: "/statistic",
+        element: <Statistic/>,
+        loader: ()=> fetch('/data.json')
       },
     ],
   },
